@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.cn.th</groupId>
-  <artifactId>maven_web</artifactId>
+  <artifactId>cici</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>maven_web Maven Webapp</name>
+  <name>cici Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
   <dependency>
@@ -112,7 +112,7 @@
   
   
   <build>
-    <finalName>maven_web</finalName>
+    <finalName>cici</finalName>
     <plugins>
 			
 			<!-- 打包 -->

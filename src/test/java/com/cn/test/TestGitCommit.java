@@ -20,5 +20,8 @@ package com.cn.test;
  */
 public class TestGitCommit {
 
+	public static void main(String[] args) {
+		
+	}
 }
 

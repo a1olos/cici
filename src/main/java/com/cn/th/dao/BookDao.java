@@ -1,17 +1,14 @@
 package com.cn.th.dao;
 
+import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Component;
 
 import com.cn.th.bean.Book;
 
-@Component
-public class BookDao {
+public interface BookDao {
 
 	//模拟数据库操作
-	public void add(Book book){
-		System.out.print("Add");
-	}
-	public void update(Book book){
-		System.out.print("Update");
-	}
+	public void add(Book book) throws DataAccessException;
+	
+	public void update(Book book)throws DataAccessException;
 }

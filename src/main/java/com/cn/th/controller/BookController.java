@@ -1,5 +1,7 @@
 package com.cn.th.controller;
 
+import java.rmi.ServerException;
+
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -21,14 +23,14 @@ public class BookController {
 	private BookService bookService;
 	
 	@RequestMapping("/add.do")
-	public String add(Book book){
+	public String add(Book book) throws ServerException{
 		System.out.println("bookname:"+book.getName());
 		System.out.println("author:"+book.getAuthor());
 		bookService.add(book);
 		return "common/success";
 	}
 	@RequestMapping("/update.do")
-	public String update(HttpServletRequest request,Book book,HttpServletResponse response, Model model) {
+	public String update(HttpServletRequest request,Book book,HttpServletResponse response, Model model) throws ServerException {
 		bookService.update(book);
 		model.addAttribute("page", "应用2---");
 		model.addAttribute("sessionID",request.getSession().getId());

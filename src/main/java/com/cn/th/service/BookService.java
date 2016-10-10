@@ -1,32 +1,20 @@
 package com.cn.th.service;
 
-import javax.annotation.Resource;
-
-import org.springframework.stereotype.Component;
+import java.rmi.ServerException;
 
 import com.cn.th.bean.Book;
 import com.cn.th.dao.BookDao;
 
 
-@Component
-public class BookService {
+public interface BookService {
 
-	private BookDao bookDao;
-
-	public BookDao getBookDao() {
-		return bookDao;
-	}
-
-	@Resource
-	public void setBookDao(BookDao bookDao) {
-		this.bookDao = bookDao;
-	}
+	public BookDao getBookDao()throws ServerException;
 	
-	public void add(Book book){
-		bookDao.add(book);
-	}
-	public void update(Book book){
-		bookDao.update(book);
-	}
+	public void setBookDao(BookDao bookDao)throws ServerException;
 	
+	public void add(Book book)throws ServerException;
+	
+	public void update(Book book)throws ServerException;
 }
+
+

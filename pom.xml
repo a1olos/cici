@@ -179,13 +179,13 @@
 	<dependency>
 	    <groupId>de.javakaffee.msm</groupId>
 	    <artifactId>memcached-session-manager-tc7</artifactId>
-	    <version>1.6.5</version>
+	    <version>1.7.0</version>
 	</dependency>
 	
 	<dependency>
 	    <groupId>de.javakaffee.msm</groupId>
 	    <artifactId>memcached-session-manager</artifactId>
-	    <version>1.6.5</version>
+	    <version>1.7.0</version>
 	</dependency>
 	
 	<dependency>

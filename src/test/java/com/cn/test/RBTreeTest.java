@@ -8,6 +8,9 @@
 */
 
 package com.cn.test;
+
+import java.util.TreeMap;
+
 /**
   * Java 语言: 二叉查找树
   *
@@ -16,12 +19,15 @@ package com.cn.test;
   */
  public class RBTreeTest {
  
-	 private static final int a[] = {10, 40, 30, 60, 90, 70, 20, 50, 80,2,111,5,8,45,35};
+	 private static final int a[] = {10, 40, 30,  60, 90, 70, 20, 50, 80,2,111,5,8,45,35};
      
      private static final boolean mDebugInsert = true;    // "插入"动作的检测开关(false，关闭；true，打开)
      private static final boolean mDebugDelete = true;    // "删除"动作的检测开关(false，关闭；true，打开)
  
      public static void main(String[] args) {
+    	 TreeMap<Integer , String> s = new TreeMap<Integer, String>();
+    	 
+    	 
          int i, ilen = a.length;
          RBTree<Integer> tree=new RBTree<Integer>();
  
